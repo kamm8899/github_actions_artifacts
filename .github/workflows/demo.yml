@@ -40,7 +40,7 @@ jobs:
     steps:
     #need to download artifacts that weer uploaded in the previous step
       - name: Get build artifacts
-        uses: actions/download-artifacts@v3
+        uses: actions/download-artifact@v3
         with: 
           name: dist-files
       - name: Output contents
